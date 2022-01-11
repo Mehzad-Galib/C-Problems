@@ -1,0 +1,48 @@
+Global variable and local variable.
+
+Global variable can be declared anywhere in the function, and the variable itself can be used within any child function/ any function within the program.
+
+Local variable is declared within a function or logic scope, the variable can't be used outside of the scope.
+
+both variables can be of same name.
+
+Global functions are used to share variable info to all functions.
+
+Standard I/O:
+printf, scanf, getchar(gettting single input from the keyboard), putchar(printing single character in the screen).
+
+File I/O:
+Read file, write a new file, appending existing file.
+
+Step 1: Reading File:
+
+variable: FILE *fp; // variable declaration for file pointer
+
+function: FILE *fopen(char *name, char *mode){
+
+}
+
+FILE *fp;
+
+fp = fopen("input.txt", "r"); // open input.txt in read mode
+
+fscanf(fp, "%d", &n); // read a value from file;
+
+fclose(fp); // close input.txt
+
+functions to read:
+
+fscanf(FILE *fp, char* format);
+
+fgetc(FILE *fp);
+
+fgets(char *array, int size, FILE *fp);
+
+Step 2: Writing a file;
+
+fp = fopen("output.txt", "w"); // create output.txt or blanks output.txt and edit in write mode
+
+fprintf(fp, "%d", n); // write to file
+
+fclose(fp);
+

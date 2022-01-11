@@ -1,0 +1,44 @@
+Pointers:
+
+A regular variable has 2 properties, a memory and an adderss. 
+
+Pointer holds address of another variable. 
+
+p = &x [p denotes the value which is address of variable x];
+
+*p = 10 is same as x = 10;
+
+We can move different memory location via pointer; Dynamic memory allocation is the best usecase of pointer. 
+
+Addressing array directly has no need to declare with &
+
+like: int a[10];
+int *pa;
+pa = a; 'pa' variable addressing the whole array 'a'; 
+
+f.e: *(pa+1) is a[1]; this is called relative addressing;
+
+#functions in C;
+
+return-type function-name(parameters with type){
+    declaration statement;
+    return value;
+}
+
+forward declaration is needed for proper compilation;
+
+Call by Value example: printf();
+
+Function Arguments: Call by Reference: example: scanf();
+
+the called function is given the address of the original variable; change in the argument variable affect the original varible;
+
+int power(int *base, int *n){
+    x = power(&b, &num); change in base will affect b because b and base is the same instance; not recommended; 
+    
+}
+
+if argument is an array, then it is always passed as reference; 
+
+
+This is C programming class of July 2021!@#$

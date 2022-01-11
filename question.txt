@@ -1,0 +1,3 @@
+read file password.txt each line of the file contains a username and a password separated by space.
+
+save
